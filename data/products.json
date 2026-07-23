@@ -36,24 +36,38 @@
     "subscription": { "available": true, "pricePerMonth": 700, "note": "4×100 г щомісяця" }
   },
   {
-    "id": "basturma",
+    "id": "basturma-pork",
     "category": "Бастурма",
-    "name": "Бастурма",
-    "flavors": ["свинина", "яловичина"],
+    "name": "Свинина",
+    "flavors": ["класична"],
     "weights": [
-      { "label": "100 г", "price": 190 },
-      { "label": "300 г", "price": 520 }
+      { "label": "50 г", "price": 95 },
+      { "label": "100 г", "price": 180 },
+      { "label": "500 г", "price": 850 }
+    ],
+    "subscription": { "available": false }
+  },
+  {
+    "id": "basturma-beef",
+    "category": "Бастурма",
+    "name": "Яловичина",
+    "flavors": ["класична"],
+    "weights": [
+      { "label": "50 г", "price": 110 },
+      { "label": "100 г", "price": 210 },
+      { "label": "500 г", "price": 1000 }
     ],
     "subscription": { "available": false }
   },
   {
     "id": "sausages",
-    "category": "Ковбаси",
-    "name": "Ковбаси сушені",
+    "category": "Ковбаски",
+    "name": "Ковбаски",
     "flavors": ["класичні"],
     "weights": [
-      { "label": "300 г", "price": 220 },
-      { "label": "500 г", "price": 340 }
+      { "label": "50 г", "price": 40 },
+      { "label": "100 г", "price": 75 },
+      { "label": "500 г", "price": 350 }
     ],
     "subscription": { "available": false }
   },
@@ -63,7 +77,9 @@
     "name": "Свинячі вушка",
     "flavors": ["часник", "гострі"],
     "weights": [
-      { "label": "200 г", "price": 120 }
+      { "label": "100 г", "price": 65 },
+      { "label": "200 г", "price": 120 },
+      { "label": "1000 г", "price": 550 }
     ],
     "subscription": { "available": false }
   }
