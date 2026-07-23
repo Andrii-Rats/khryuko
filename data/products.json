@@ -65,9 +65,9 @@
     "name": "Ковбаски",
     "flavors": ["класичні"],
     "weights": [
-      { "label": "50 г", "price": 40 },
-      { "label": "100 г", "price": 75 },
-      { "label": "500 г", "price": 350 }
+      { "label": "50 г", "price": 85 },
+      { "label": "100 г", "price": 160 },
+      { "label": "500 г", "price": 770 }
     ],
     "subscription": { "available": false }
   },
@@ -77,9 +77,9 @@
     "name": "Свинячі вушка",
     "flavors": ["часник", "гострі"],
     "weights": [
-      { "label": "100 г", "price": 65 },
-      { "label": "200 г", "price": 120 },
-      { "label": "1000 г", "price": 550 }
+      { "label": "100 г", "price": 80 },
+      { "label": "200 г", "price": 150 },
+      { "label": "1000 г", "price": 700 }
     ],
     "subscription": { "available": false }
   }
