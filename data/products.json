@@ -1,0 +1,70 @@
+[
+  {
+    "id": "jerky-chicken",
+    "category": "Джерки",
+    "name": "Курятина",
+    "flavors": ["часник", "дорблю", "шрірача"],
+    "weights": [
+      { "label": "50 г", "price": 80 },
+      { "label": "100 г", "price": 150 },
+      { "label": "500 г", "price": 700 }
+    ],
+    "subscription": { "available": true, "pricePerMonth": 550, "note": "4×100 г щомісяця" }
+  },
+  {
+    "id": "jerky-pork",
+    "category": "Джерки",
+    "name": "Свинина",
+    "flavors": ["чилі", "барбекю"],
+    "weights": [
+      { "label": "50 г", "price": 90 },
+      { "label": "100 г", "price": 170 },
+      { "label": "500 г", "price": 800 }
+    ],
+    "subscription": { "available": true, "pricePerMonth": 600, "note": "4×100 г щомісяця" }
+  },
+  {
+    "id": "jerky-beef",
+    "category": "Джерки",
+    "name": "Яловичина",
+    "flavors": ["класичні"],
+    "weights": [
+      { "label": "50 г", "price": 110 },
+      { "label": "100 г", "price": 200 },
+      { "label": "500 г", "price": 950 }
+    ],
+    "subscription": { "available": true, "pricePerMonth": 700, "note": "4×100 г щомісяця" }
+  },
+  {
+    "id": "basturma",
+    "category": "Бастурма",
+    "name": "Бастурма",
+    "flavors": ["свинина", "яловичина"],
+    "weights": [
+      { "label": "100 г", "price": 190 },
+      { "label": "300 г", "price": 520 }
+    ],
+    "subscription": { "available": false }
+  },
+  {
+    "id": "sausages",
+    "category": "Ковбаси",
+    "name": "Ковбаси сушені",
+    "flavors": ["класичні"],
+    "weights": [
+      { "label": "300 г", "price": 220 },
+      { "label": "500 г", "price": 340 }
+    ],
+    "subscription": { "available": false }
+  },
+  {
+    "id": "khrushky",
+    "category": "Хрушки",
+    "name": "Свинячі вушка",
+    "flavors": ["часник", "гострі"],
+    "weights": [
+      { "label": "200 г", "price": 120 }
+    ],
+    "subscription": { "available": false }
+  }
+]

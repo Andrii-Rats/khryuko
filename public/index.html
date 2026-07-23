@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Хрюко — домашні м'ясні снеки</title>
+<link rel="icon" href="assets/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bitter:wght@600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a href="#top" class="logo">
+      <img src="assets/logo.png" alt="Хрюко" class="logo-img">
+      <span class="logo-text">ХРЮКО</span>
+    </a>
+    <nav class="nav">
+      <a href="#catalog">Каталог</a>
+      <a href="#subscription">Підписка</a>
+      <a href="#contacts">Контакти</a>
+    </nav>
+    <button class="cart-btn" id="cartBtn" aria-label="Відкрити кошик">
+      🛒 <span class="cart-count" id="cartCount">0</span>
+    </button>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="wrap hero-inner">
+      <img src="assets/logo.png" alt="Хрюко" class="hero-logo">
+      <span class="tag-bracket">[ ХРЮКО ]</span>
+      <h1>Домашній крафт<br>м'ясних смаколиків</h1>
+      <p class="hero-sub">Джерки, бастурма, ковбаси і хрушки — за авторськими рецептами, без жодної краплі хімії.</p>
+      <a href="#catalog" class="btn btn-primary">Обрати свій смак</a>
+    </div>
+  </section>
+
+  <section class="catalog" id="catalog">
+    <div class="wrap">
+      <span class="tag-bracket">[ асортимент ]</span>
+      <h2 class="section-title">Каталог</h2>
+      <div class="grid" id="productGrid">
+        <p class="loading">Завантажуємо асортимент…</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="subscription-note" id="subscription">
+    <div class="wrap">
+      <span class="tag-bracket">[ підписка ]</span>
+      <h2 class="section-title">Підписка на джерки</h2>
+      <p>Оформіть підписку від 1 місяця — і не думайте про запаси. Перед закінченням терміну ми напишемо вам у Telegram, а продовжити можна одним натисканням.</p>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer" id="contacts">
+  <div class="wrap">
+    <p class="footer-brand">ХРЮКО</p>
+    <p class="muted">домашні м'ясні снеки · пишіть нам у Telegram, якщо виникнуть питання щодо замовлення</p>
+  </div>
+</footer>
+
+<!-- Кошик -->
+<aside class="cart-drawer" id="cartDrawer">
+  <div class="cart-drawer-inner">
+    <div class="cart-header">
+      <h3>Кошик</h3>
+      <button class="icon-btn" id="closeCart" aria-label="Закрити кошик">✕</button>
+    </div>
+    <div class="cart-items" id="cartItems"></div>
+    <div class="cart-footer">
+      <div class="cart-total">
+        <span>Разом</span>
+        <span id="cartTotal">0 грн</span>
+      </div>
+      <button class="btn btn-primary btn-full" id="checkoutBtn" disabled>Оформити замовлення</button>
+    </div>
+  </div>
+</aside>
+<div class="overlay" id="overlay"></div>
+
+<!-- Форма замовлення -->
+<div class="modal" id="checkoutModal">
+  <div class="modal-card">
+    <div class="cart-header">
+      <h3>Дані для замовлення</h3>
+      <button class="icon-btn" id="closeModal" aria-label="Закрити">✕</button>
+    </div>
+    <form id="orderForm">
+      <label>Ім'я
+        <input type="text" name="name" required autocomplete="name">
+      </label>
+      <label>Телефон
+        <input type="tel" name="phone" required autocomplete="tel" placeholder="+380...">
+      </label>
+      <label>Адреса доставки (необов'язково)
+        <input type="text" name="address" autocomplete="street-address">
+      </label>
+      <label>Коментар (необов'язково)
+        <textarea name="comment" rows="2"></textarea>
+      </label>
+      <p class="form-note">Оплата: після оформлення ми зв'яжемось з вами, щоб надіслати посилання на оплату.</p>
+      <button type="submit" class="btn btn-primary btn-full" id="submitOrder">Підтвердити замовлення</button>
+    </form>
+    <div class="order-success" id="orderSuccess" hidden>
+      <p class="success-mark">✓</p>
+      <h3>Дякуємо!</h3>
+      <p>Замовлення прийнято. Ми напишемо вам щодо оплати найближчим часом.</p>
+      <button class="btn btn-secondary" id="closeSuccess">Закрити</button>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
